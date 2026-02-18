@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Système de Recensement d'Église</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-green-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img id="logo" src="https://via.placeholder.com/150x60?text=EEADCI" alt="Logo" class="h-12 mr-3">
+                    <div>
+                        <h1 id="siteName" class="text-xl font-bold text-gray-800">EEADCI</h1>
+                        <p class="text-sm text-gray-600">Recensement de la Jeunesse</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex gap-6">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium">Fonctionnalités</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">À propos</a>
+                    <a href="map.html" class="text-gray-600 hover:text-blue-600 font-medium">Carte</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-20">
+        <div class="text-center max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-slide-up">
+                Bienvenue dans notre<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
+                    Communauté d'Église
+                </span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 animate-slide-up">
+                Inscrivez-vous pour faire partie de notre famille spirituelle et restez connecté avec la communauté
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                <a href="index.html" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                    <i class="fas fa-user-plus mr-2"></i>S'inscrire maintenant
+                </a>
+                <a href="map.html" class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all">
+                    <i class="fas fa-map-marked-alt mr-2"></i>Voir la carte
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <div class="text-blue-600 text-5xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 id="statsMembers" class="text-4xl font-bold text-gray-800 mb-2">0</h3>
+                    <p class="text-gray-600">Membres inscrits</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-green-600 text-5xl mb-4">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3 id="statsLieux" class="text-4xl font-bold text-gray-800 mb-2">0</h3>
+                    <p class="text-gray-600">Lieux de culte</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-purple-600 text-5xl mb-4">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 id="statsDepts" class="text-4xl font-bold text-gray-800 mb-2">0</h3>
+                    <p class="text-gray-600">Départements</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-orange-600 text-5xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 id="statsGeo" class="text-4xl font-bold text-gray-800 mb-2">0</h3>
+                    <p class="text-gray-600">Géolocalisés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section id="features" class="container mx-auto px-4 py-20">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+            Pourquoi s'inscrire ?
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-clipboard-check text-blue-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Inscription facile</h3>
+                <p class="text-gray-600">
+                    Formulaire simple en 3 étapes pour compléter votre inscription rapidement et facilement.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-map-marked-alt text-green-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Géolocalisation</h3>
+                <p class="text-gray-600">
+                    Localisez-vous sur la carte pour faciliter l'organisation et le covoiturage avec les membres proches.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-users-cog text-purple-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Départements</h3>
+                <p class="text-gray-600">
+                    Rejoignez un département de service et contribuez activement à la vie de l'église.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-shield-alt text-red-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Sécurisé</h3>
+                <p class="text-gray-600">
+                    Vos données sont stockées en toute sécurité et ne sont accessibles qu'aux administrateurs autorisés.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-mobile-alt text-yellow-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Responsive</h3>
+                <p class="text-gray-600">
+                    Accédez au système depuis n'importe quel appareil : ordinateur, tablette ou smartphone.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-chart-line text-indigo-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Statistiques</h3>
+                <p class="text-gray-600">
+                    Les administrateurs peuvent suivre l'évolution de la communauté avec des graphiques détaillés.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="bg-gradient-to-r from-blue-600 to-green-600 py-20">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">À propos du recensement</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8 opacity-90">
+                Ce système de recensement a été conçu pour renforcer les liens au sein de notre communauté d'église,
+                faciliter la communication et mieux organiser nos activités spirituelles et sociales.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                    Commencer l'inscription
+                </a>
+                <a href="admin.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+                    Accès administrateur
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white">Inscription</a></li>
+                        <li><a href="map.html" class="hover:text-white">Carte des membres</a></li>
+                        <li><a href="admin.html" class="hover:text-white">Administration</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-envelope mr-2"></i> contact@eglise.org</li>
+                        <li><i class="fas fa-phone mr-2"></i> +33 1 23 45 67 89</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Adresse de l'église</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Suivez-nous</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-2xl hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2026 <span id="footerName">EEADCI</span>. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Charger les statistiques
+        async function loadStats() {
+            try {
+                const [membresRes, lieuxRes, deptsRes] = await Promise.all([
+                    fetch('tables/membres?limit=1000'),
+                    fetch('tables/lieux_culte?limit=100'),
+                    fetch('tables/departements?limit=100')
+                ]);
+
+                const membres = await membresRes.json();
+                const lieux = await lieuxRes.json();
+                const depts = await deptsRes.json();
+
+                document.getElementById('statsMembers').textContent = membres.total || 0;
+                document.getElementById('statsLieux').textContent = lieux.data.filter(l => l.actif).length || 0;
+                document.getElementById('statsDepts').textContent = depts.data.filter(d => d.actif).length || 0;
+                document.getElementById('statsGeo').textContent = membres.data.filter(m => m.latitude && m.longitude).length || 0;
+            } catch (error) {
+                console.error('Erreur lors du chargement des statistiques:', error);
+            }
+        }
+
+        // Charger la configuration
+        async function loadConfig() {
+            try {
+                const response = await fetch('tables/configuration?limit=1');
+                const data = await response.json();
+                
+                if (data.data && data.data.length > 0) {
+                    const config = data.data[0];
+                    if (config.nomEglise) {
+                        document.getElementById('siteName').textContent = config.nomEglise;
+                        document.getElementById('footerName').textContent = config.nomEglise;
+                    }
+                    if (config.logoUrl) {
+                        document.getElementById('logo').src = config.logoUrl;
+                    }
+                }
+            } catch (error) {
+                console.error('Erreur lors du chargement de la configuration:', error);
+            }
+        }
+
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', () => {
+            loadStats();
+            loadConfig();
+        });
+    </script>
+</body>
+</html>
