@@ -74,11 +74,11 @@ Ce guide vous aidera à démarrer rapidement avec l'application.
 Le système est pré-configuré avec :
 
 ### Lieux de culte
-- Temple de la Victoire
-- Temple de la Gloire
-- Temple de la Grâce
-- Salle d'Assemblée Centre-Ville
-
+- Bethanie Faladjè
+- Béthanie Sirakoro
+- Banankoro
+- Niamakoro
+- Sanakoroba
 ### Départements de service
 - Louange et Adoration
 - Accueil
@@ -87,7 +87,10 @@ Le système est pré-configuré avec :
 - Intercession
 - Média et Communication
 - Protocole
-- Ushers
+- USécurité
+- Diaconat
+- Finance
+- laïc 
 
 ## ⚙️ Configuration rapide
 
